@@ -71,8 +71,15 @@
           <div class="card-body items-center text-center">
             <h2 class="card-title">Parallelogram</h2>
             <p>Area (A) = b x h</p>
+            <div>
+              <input id="parallelogram-base" class="w-24 p-3 rounded-lg" type="text" placeholder="b">
+              <span>cm</span>
+              <input id="parallelogram-height" class="w-24 p-3 rounded-lg" type="text" placeholder="h">
+              <span>cm</span>
+            </div>
+            <p class="text-2xl">Area : <span id="parallelogram-area">0</span><span>cm</span><sup>2</sup></p>
             <div class="card-actions">
-              <button class="btn btn-primary">Calculate</button>
+              <button onclick="calculateParallelogramArea()" class="btn btn-primary">Calculate</button>
             </div>
           </div>
         </div>
@@ -123,7 +130,6 @@
     </div>
   </main>
   <script src="script/triangel.js"></script>
-  <script src="script/Rectangle.js"></script>
 </body>
 
 
