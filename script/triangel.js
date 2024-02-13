@@ -58,3 +58,51 @@ function calculateParallelogramArea() {
   const parallelogramAreaSpan = document.getElementById('parallelogram-area');
   parallelogramAreaSpan.innerText = parallelogram;
 }
+
+// rhombus calculation
+
+function calculateRhombusArea() {
+  const rhombusBase = getInputValueById('rhombus-base');
+  // console.log(rhombusBase);
+  const rhombusHeight = getInputValueById('rhombus-height');
+  // console.log(rhombusHeight);
+  const rhombusArea = 0.5 * rhombusBase * rhombusHeight;
+  console.log(rhombusArea);
+
+  setInnerTextById('rhombus-Area', rhombusArea);
+}
+function getInputValueById(inputFieldId) {
+  const inputField = document.getElementById(inputFieldId);
+  const inputValueText = inputField.value;
+  const inputvalue = parseFloat(inputValueText);
+  return inputvalue;
+}
+function setInnerTextById(elementId, area) {
+  const element = document.getElementById(elementId);
+  element.innerText = area;
+}
+// pentagone area
+function calculatePentagoneArea() {
+  const pentagonPerameter = getPentagoneInputValue('pentagon-peremeter');
+  const pentagonArothem = getPentagoneInputValue('pentagon-arothem');
+  const pentagonArea = (5 / 2) * pentagonPerameter * pentagonArothem;
+  // console.log(pentagonArea);
+  setPentagoneInnerId('pentagon-area', pentagonArea);
+}
+function getPentagoneInputValue(pentagoneId) {
+  const pentagoneById = document.getElementById(pentagoneId);
+  const pentagoneInputValue = pentagoneById.value;
+  const pentagoneValue = parseFloat(pentagoneInputValue);
+  return pentagoneValue;
+}
+function setPentagoneInnerId(pentagoneIdByValue, pantagone) {
+  const pentagoneIdByinput = document.getElementById(pentagoneIdByValue);
+  pentagoneIdByinput.innerText = pantagone;
+}
+
+function calculateRhombusArea() {
+  const ellipseparameter = getInputValueById('ellipse-peremeter');
+  const ellipseArothem = getInputValueById('ellipse-arothem');
+  const ellipseArea = 3.1416 * ellipseparameter * ellipseArothem;
+  setInnerTextById('ellipse-area', ellipseArea);
+}

@@ -90,9 +90,16 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Rhombus</h2>
-            <p>Area (A) = b x h</p>
+            <p>Area (A) =0.5 x b x h</p>
+            <div>
+              <input id="rhombus-base" class="w-24 p-3 rounded-lg " type="text" placeholder="b">
+              <span>cm</span>
+              <input id="rhombus-height" class="w-24 p-3 rounded-lg" type="text" placeholder="h">
+              <span>cm</span>
+            </div>
+            <p class="text-2xl"> Area :<span id="rhombus-Area">0</span><span> cm</span><sup>2</sup></p>
             <div class="card-actions">
-              <button class="btn btn-primary">Calculate</button>
+              <button onclick="calculateRhombusArea()" class="btn btn-primary">Calculate</button>
             </div>
           </div>
         </div>
@@ -103,9 +110,16 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Pentagon</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>Area :A = (5 ⁄ 2) × p × b</p>
+            <div>
+              <input id="pentagon-peremeter" class="w-24 p-3 rounded-lg " type="text" placeholder="b">
+              <span>cm</span>
+              <input id="pentagon-arothem" class="w-24 p-3 rounded-lg" type="text" placeholder="h">
+              <span>cm</span>
+            </div>
+            <p class="text-2xl"> Area :<span id="pentagon-area">0</span><span> cm</span><sup>2</sup></p>
             <div class="card-actions">
-              <button class="btn btn-primary">Calculate</button>
+              <button onclick="calculatePentagoneArea()" class="btn btn-primary">Calculate</button>
             </div>
           </div>
         </div>
@@ -116,9 +130,16 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Ellipse</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>Area (A) = π ab</p>
+            <div>
+              <input id="ellipse-peremeter" class="w-24 p-3 rounded-lg " type="text" placeholder="a">
+              <span>cm</span>
+              <input id="ellipse-arothem" class="w-24 p-3 rounded-lg" type="text" placeholder="b">
+              <span>cm</span>
+            </div>
+            <p class="text-2xl"> Area :<span id="ellipse-area">0</span><span> cm</span><sup>2</sup></p>
             <div class="card-actions">
-              <button class="btn btn-primary">Buy Now</button>
+              <button onclick="calculateRhombusArea()" class="btn btn-primary">Buy Now</button>
             </div>
           </div>
         </div>
